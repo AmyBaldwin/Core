@@ -1,2 +1,2 @@
 # Core
-Genome_analysis_pipeline
+A comprehensive genome analysis pipeline.
