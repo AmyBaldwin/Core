@@ -143,8 +143,12 @@
 <p>First enter this command:</p>
 <pre><code>cd ~/genome_tools/Core
 </code></pre>
-<p>Then enter this command, replacing <code>YYYY-MM-DD</code> with a date: </p>
+<p>Then enter one of the following commands, depending on the file extension of your raw read data.</p>
+<p>If the file extension of your raw read data is <code>.fastq.gz</code>, enter this command, replacing <code>YYYY-MM-DD</code> with a date: </p>
 <pre><code>nextflow run core.nf --indexpath 'index_YYYY-MM-DD.csv' --inputfq 'YYYY-MM-DD/*_R{1,2}_001.fastq.gz'
+</code></pre>
+<p>If the file extension of your raw read data is <code>.fq.gz</code>, enter this command, replacing <code>YYYY-MM-DD</code> with a date: </p>
+<pre><code>nextflow run core.nf --indexpath 'index_YYYY-MM-DD.csv' --inputfq 'YYYY-MM-DD/*_R{1,2}_001.fq.gz'
 </code></pre>
 <div class="admonition tip">
 <p class="admonition-title">The sample sheet</p>
